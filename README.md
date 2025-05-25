@@ -3,7 +3,7 @@
 ## Integrantes do grupo com nome completo
 * Rafael Varela Joachim Queimado - rafael.queimado@ufrpe.br
 * João Victor Vasconcelos Ferraz - joao.victorferraz@ufrpe.br
-* Ana Nínive - ana.ninive@ufrpe.br
+* Ana Nínive Ribeiro de Oliveira - ana.ninive@ufrpe.br
 * Bruno Leonardo
 
 ## Descrição
