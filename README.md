@@ -6,6 +6,10 @@
 * Ana Nínive Ribeiro de Oliveira - ana.ninive@ufrpe.br
 * Bruno Leonardo - Brunoleodbv@gmail.com
 
+## Diagrama de Classes
+
+![Descrição da imagem](assets\SistemadeAgendamentodeSalãodeBeleza.drawio.png)
+
 ## Descrição
 
 Este sistema tem como objetivo gerenciar o agendamento de serviços em um salão de beleza, facilitando o controle de horários, profissionais, clientes e serviços oferecidos. O sistema permite o cadastro dos profissionais com suas especialidades, clientes com seus dados pessoais, e serviços disponíveis com duração e preço.
