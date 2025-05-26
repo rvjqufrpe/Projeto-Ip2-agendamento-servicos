@@ -8,7 +8,7 @@
 
 ## Diagrama de Classes
 
-![Descrição da imagem](assets\SistemadeAgendamentodeSalãodeBeleza.drawio.png)
+![Descrição da imagem](assets/SistemadeAgendamentodeSalãodeBeleza.drawio.png)
 
 ## Descrição
 
