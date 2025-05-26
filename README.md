@@ -4,7 +4,7 @@
 * Rafael Varela Joachim Queimado - rafael.queimado@ufrpe.br
 * João Victor Vasconcelos Ferraz - joao.victorferraz@ufrpe.br
 * Ana Nínive Ribeiro de Oliveira - ana.ninive@ufrpe.br
-* Bruno Leonardo - Brunoleodbv@gmail.com
+* Bruno Leonardo Assis Pimentel - bruno.assis@ufrpe.br
 
 ## Diagrama de Classes
 
