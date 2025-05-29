@@ -21,16 +21,6 @@ public class Cliente extends Pessoa {
         this.status = StatusCliente.ATIVO;
     }
 
-    public String verificarHorarioDisponivel() {
-        return "Horários disponíveis: 10h, 11h, 14h.";
-    }
-
-    public boolean agendarServico() {
-        if (status == StatusCliente.ATIVO) {
-            return true;
-        }
-        return false;
-    }
 
     public boolean cancelarServico() {
         return true;

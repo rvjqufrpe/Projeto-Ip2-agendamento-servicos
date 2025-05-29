@@ -13,15 +13,6 @@ public class Servico {
         this.preco = preco;
     }
 
-    public void cadastrar() {
-        System.out.println("Serviço cadastrado: " + nome);
-    }
-
-    public void atualizar(String novoNome, String novaDescricao) {
-        this.nome = novoNome;
-        this.descricao = novaDescricao;
-    }
-
     public void atualizarPreco(double novoPreco) {
         this.preco = novoPreco;
     }

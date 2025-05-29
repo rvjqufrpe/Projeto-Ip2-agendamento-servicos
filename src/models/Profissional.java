@@ -11,7 +11,7 @@ public class Profissional extends Pessoa {
         this.especialidades = new ArrayList<>();
     }
 
-    public Profissional(String nome, int telefone, String email) {
+    public Profissional(String nome, String telefone, String email) {
         super(nome, telefone, email);
         this.especialidades = new ArrayList<>();
     }
@@ -24,14 +24,6 @@ public class Profissional extends Pessoa {
 
     public void removerEspecialidade(String nomeEspecialidade) {
         especialidades.removeIf(e -> e.getEspecialidade().equalsIgnoreCase(nomeEspecialidade));
-    }
-
-    public String verificarAgenda() {
-        return "Agenda do profissional: livre de 8h às 12h.";
-    }
-
-    public boolean cancelarServico() {
-        return true;
     }
 
     public List<Especialidade> getEspecialidades() {
