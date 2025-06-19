@@ -1,5 +1,21 @@
 # Sistema de Agendamento de Serviços em Salão de Beleza
 
+## Funcionalidades Implementadas
+- Cadastro de Clientes, Profissionais e Serviços
+- Agendamento
+
+## Estrutura
+- `models`: classes de domínio
+- `repository`: dados em memória
+- `controller`: regras de negócio
+- `view`: menus no terminal
+
+## Executar
+Compile e rode a classe `Main.java` (a criar no final)
+
+## Requisitos
+Java 17+ ou superior
+
 ## Integrantes do grupo com nome completo
 * Rafael Varela Joachim Queimado - rafael.queimado@ufrpe.br
 * João Victor Vasconcelos Ferraz - joao.victorferraz@ufrpe.br

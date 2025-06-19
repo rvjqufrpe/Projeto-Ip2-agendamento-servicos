@@ -1,4 +1,4 @@
-package models;
+package model;
 
 public class Especialidade {
     private String especialidade;
