@@ -1,19 +1,31 @@
 package controller;
 
 import model.Profissional;
-import repository.ProfissionalRepository;
 
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class ProfissionalController {
-    private final ProfissionalRepository repo = new ProfissionalRepository();
+    private final List<Profissional> profissionais = new ArrayList<>();
 
     public void cadastrar(String nome, String telefone, String email) {
         Profissional p = new Profissional(nome, telefone, email);
-        repo.salvar(p);
+        profissionais.add(p);
     }
 
     public List<Profissional> listar() {
-        return repo.listarTodos();
+        return profissionais;
+    }
+
+    public void remover(String nome) {
+        Iterator<Profissional> iterator = profissionais.iterator();
+        while (iterator.hasNext()) {
+            Profissional p = iterator.next();
+            if (p.getNome().equalsIgnoreCase(nome)) {
+                iterator.remove();
+                break;
+            }
+        }
     }
 }

@@ -22,9 +22,14 @@ Java 17+ ou superior
 * Ana Nínive Ribeiro de Oliveira - ana.ninive@ufrpe.br
 * Bruno Leonardo Assis Pimentel - bruno.assis@ufrpe.br
 
+## Modelo Navegacional
+
+![Modelo Navegacional](assets/ModeloNavegacional.png)
+
+
 ## Diagrama de Classes
 
-![Descrição da imagem](assets/SistemadeAgendamentodeSalãodeBeleza.drawio.png)
+![Diagrama de Classes](assets/SistemadeAgendamentodeSalãodeBeleza.drawio.png)
 
 ## Descrição
 
