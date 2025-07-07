@@ -9,15 +9,20 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 public class AgendamentoController {
-    private final AgendamentoRepository repo = new AgendamentoRepository();
+    private final AgendamentoRepository agendamentoRepo;
+
+    public AgendamentoController() {
+        this.agendamentoRepo = AgendamentoRepository.getInstance();
+    }
 
     public void agendar(LocalDateTime dataHora, int duracao, Cliente cliente, Servico servico) {
         Agendamento agendamento = new Agendamento(dataHora, duracao, cliente, servico);
-        repo.salvar(agendamento);
+        agendamentoRepo.salvar(agendamento);
     }
 
     public List<Agendamento> listar() {
-        return repo.listarTodos();
+        return agendamentoRepo.listarTodos();
     }
 }
+
 

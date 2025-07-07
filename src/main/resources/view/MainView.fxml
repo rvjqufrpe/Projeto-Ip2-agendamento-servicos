@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="view.MainViewController">
+
+    <top>
+        <Label text="Dashboard do Sistema de Agendamentos"
+               style="-fx-font-size: 22px; -fx-font-weight: bold;"
+               BorderPane.alignment="CENTER"/>
+    </top>
+
+    <center>
+        <VBox spacing="15">
+
+                <padding>
+                    <Insets top="20" right="20" bottom="20" left="20"/>
+                </padding>
+
+            <!-- Clientes -->
+            <TitledPane text="Clientes">
+                <VBox spacing="5">
+                    <TableView fx:id="tabelaClientes" prefHeight="150">
+                        <columns>
+                            <TableColumn fx:id="colClienteNome" text="Nome" prefWidth="150"/>
+                            <TableColumn fx:id="colClienteTelefone" text="Telefone" prefWidth="120"/>
+                            <TableColumn fx:id="colClienteEmail" text="Email" prefWidth="180"/>
+                        </columns>
+                    </TableView>
+                    <Button text="Ir para Gerenciar Clientes" onAction="#abrirClientes"/>
+                </VBox>
+            </TitledPane>
+
+            <!-- Profissionais -->
+            <TitledPane text="Profissionais">
+                <VBox spacing="5">
+                    <TableView fx:id="tabelaProfissionais" prefHeight="150">
+                        <columns>
+                            <TableColumn fx:id="colProfNome" text="Nome" prefWidth="150"/>
+                            <TableColumn fx:id="colProfTelefone" text="Telefone" prefWidth="120"/>
+                            <TableColumn fx:id="colProfEmail" text="Email" prefWidth="180"/>
+                        </columns>
+                    </TableView>
+                    <Button text="Ir para Gerenciar Profissionais" onAction="#abrirProfissionais"/>
+                </VBox>
+            </TitledPane>
+
+            <!-- Serviços -->
+            <TitledPane text="Serviços">
+                <VBox spacing="5">
+                    <TableView fx:id="tabelaServicos" prefHeight="150">
+                        <columns>
+                            <TableColumn fx:id="colServicoNome" text="Nome" prefWidth="150"/>
+                            <TableColumn fx:id="colServicoDescricao" text="Descrição" prefWidth="200"/>
+                            <TableColumn fx:id="colServicoPreco" text="Preço" prefWidth="100"/>
+                        </columns>
+                    </TableView>
+                    <Button text="Ir para Gerenciar Serviços" onAction="#abrirServicos"/>
+                </VBox>
+            </TitledPane>
+
+            <!-- Agendamentos -->
+            <TitledPane text="Agendamentos">
+                <VBox spacing="5">
+                    <TableView fx:id="tabelaAgendamentos" prefHeight="150">
+                        <columns>
+                            <TableColumn fx:id="colAgendamentoCliente" text="Cliente" prefWidth="150"/>
+                            <TableColumn fx:id="colAgendamentoServico" text="Serviço" prefWidth="150"/>
+                            <TableColumn fx:id="colAgendamentoDataHora" text="Data/Hora" prefWidth="200"/>
+                        </columns>
+                    </TableView>
+                    <Button text="Ir para Agendamentos" onAction="#abrirAgendamentos"/>
+                </VBox>
+            </TitledPane>
+        </VBox>
+    </center>
+</BorderPane>
+

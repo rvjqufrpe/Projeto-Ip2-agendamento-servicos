@@ -7,8 +7,19 @@ import java.util.List;
 import java.util.Optional;
 
 public class ClienteRepository {
+    private static ClienteRepository instance;  // singleton instance
+    
     private final List<Cliente> clientes = new ArrayList<>();
     private int proximoId = 1;
+
+    private ClienteRepository() {}  // construtor privado para evitar instanciação externa
+
+    public static synchronized ClienteRepository getInstance() {
+        if (instance == null) {
+            instance = new ClienteRepository();
+        }
+        return instance;
+    }
 
     public void salvar(Cliente cliente) {
         cliente.setIdCliente(proximoId++);

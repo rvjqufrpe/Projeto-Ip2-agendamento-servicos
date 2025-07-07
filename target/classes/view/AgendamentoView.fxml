@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="view.AgendamentosController"
+      spacing="15">
+
+    <padding>
+        <Insets top="15" right="15" bottom="15" left="15"/>
+    </padding>
+
+    <Label text="Agendamento de Serviço" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+
+    <GridPane hgap="10" vgap="10">
+        <Label text="Cliente:" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+        <ComboBox fx:id="comboClientes" GridPane.rowIndex="0" GridPane.columnIndex="1" prefWidth="200"/>
+
+        <Label text="Serviço:" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+        <ComboBox fx:id="comboServicos" GridPane.rowIndex="1" GridPane.columnIndex="1" prefWidth="200"/>
+
+        <Label text="Duração (min):" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+        <TextField fx:id="duracaoField" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+
+        <Label text="Data e Hora:" GridPane.rowIndex="3" GridPane.columnIndex="0" />
+        <TextField fx:id="dataHoraField" promptText="2025-07-20T14:30" GridPane.rowIndex="3" GridPane.columnIndex="1" />
+
+        <Button fx:id="btnAgendar" text="Agendar Serviço" GridPane.rowIndex="4" GridPane.columnIndex="1" />
+    </GridPane>
+
+    <Separator />
+
+    <Label text="Agendamentos Marcados" style="-fx-font-size: 16px;" />
+
+    <TableView fx:id="tabelaAgendamentos" prefHeight="300">
+        <columns>
+            <TableColumn fx:id="colCliente" text="Cliente" prefWidth="150"/>
+            <TableColumn fx:id="colServico" text="Serviço" prefWidth="150"/>
+            <TableColumn fx:id="colDataHora" text="Data e Hora" prefWidth="180"/>
+        </columns>
+    </TableView>
+
+    <Button fx:id="btnRemover" text="Remover Agendamento Selecionado"/>
+</VBox>

@@ -9,7 +9,7 @@ public class ClienteController {
     private final ClienteRepository clienteRepo;
 
     public ClienteController() {
-        this.clienteRepo = new ClienteRepository();
+        this.clienteRepo = ClienteRepository.getInstance();
     }
 
     public void cadastrarCliente(String nome, String telefone, String email) {

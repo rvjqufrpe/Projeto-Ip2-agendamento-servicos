@@ -8,18 +8,22 @@
 - `models`: classes de domínio
 - `repository`: dados em memória
 - `controller`: regras de negócio
-- `view`: menus no terminal
+- `view`: GUI
+
+## To-do
+- Disponibilidade por profissional (agenda) Req 8°
+- Atendimento Req 12°
+- interfaces (entre Controller Repository)
 
 ## Executar
-Compile e rode a classe `Main.java` (a criar no final)
+Compile e rode a classe `Main.java` usando Maven
+´´ mvn clean javafx:run ´´
 
 ## Requisitos
 Java 17+ ou superior
 
 ## Integrantes do grupo com nome completo
 * Rafael Varela Joachim Queimado - rafael.queimado@ufrpe.br
-* Ana Nínive Ribeiro de Oliveira - ana.ninive@ufrpe.br
-* Bruno Leonardo Assis Pimentel - bruno.assis@ufrpe.br
 
 ## Modelo Navegacional
 

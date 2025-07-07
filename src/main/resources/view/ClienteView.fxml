@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="view.ClientesViewController"
+      spacing="10">
+    
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+
+    <Label text="Gerenciar Clientes" style="-fx-font-size: 16; -fx-font-weight: bold;"/>
+
+    <GridPane hgap="10" vgap="10">
+        <Label text="Nome:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <TextField fx:id="nomeField" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+        <Label text="Telefone:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <TextField fx:id="telefoneField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+        <Label text="Email:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <TextField fx:id="emailField" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+        <Button text="Cadastrar Cliente" fx:id="btnCadastrar" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+    </GridPane>
+
+    <TableView fx:id="tabelaClientes" prefHeight="300">
+        <columns>
+            <TableColumn fx:id="colNome" text="Nome" prefWidth="150"/>
+            <TableColumn fx:id="colTelefone" text="Telefone" prefWidth="120"/>
+            <TableColumn fx:id="colEmail" text="Email" prefWidth="180"/>
+        </columns>
+    </TableView>
+
+    <Button text="Remover Cliente Selecionado" fx:id="btnRemover"/>
+</VBox>
